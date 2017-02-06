@@ -2,6 +2,8 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # next-dashboard-rambo
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/next-dashboard-rambo.svg)](https://greenkeeper.io/)
 Dashboard for the RAMBO bots
 
 ## License

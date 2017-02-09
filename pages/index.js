@@ -18,16 +18,16 @@ export default class Index extends React.Component {
           <h1 className='mui--text-title'>RAMBO</h1>
           <Row>
             <Col md='3'>
-              <Status title='Dokumenter' source={urls.dataRambo} />
+              <Status title='Dokumenter' source={urls.dataRambo} refresh='10' />
             </Col>
             <Col md='3'>
-              <Status title='Saksbehandling' source={urls.saksbehandlingRambo} />
+              <Status title='Saksbehandling' source={urls.saksbehandlingRambo} refresh='10' />
             </Col>
             <Col md='3'>
-              <Status title='Arkivering' source={urls.arkivRambo} />
+              <Status title='Arkivering' source={urls.arkivRambo} refresh='10' />
             </Col>
             <Col md='3'>
-              <Status title='Kvittering' source={urls.statusRambo} />
+              <Status title='Kvittering' source={urls.statusRambo} refresh='10' />
             </Col>
           </Row>
         </Container>

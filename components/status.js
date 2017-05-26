@@ -5,7 +5,6 @@ import Panel from 'muicss/lib/react/panel'
 const getData = require('../lib/get-data')
 
 export default class Status extends React.Component {
-
   constructor (props) {
     super(props)
     this.state = {

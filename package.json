@@ -1,7 +1,7 @@
 {
   "name": "next-dashboard-rambo",
   "description": "Dashboard for statuses",
-  "version": "1.1.9",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -10,19 +10,18 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=7.5.0"
+    "node": ">=7.10.0"
   },
   "scripts": {
-    "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
-    "test-offline": "standard && tap --reporter=spec test/**/*.js",
-    "coverage": "tap test/**/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install",
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "now-deploy": "npm test && now --alias"
+    "now-deploy": "npm test && npm run build && now out --static -n dashboard-rambo && now alias"
   },
   "keywords": [
     "dashboard",
@@ -38,23 +37,29 @@
   "bugs": {
     "url": "https://github.com/telemark/next-dashboard-rambo/issues"
   },
+  "homepage": "https://github.com/telemark/next-dashboard-rambo",
   "now": {
-    "aliases": [
-      "rambo.dashboard.next.t-fk.no"
+    "name": "dashboard-rambo",
+    "alias": [
+      "rambo.dashboard.tjeneste.win"
     ],
     "env": {
       "NODE_ENV": "production"
-    }
+    },
+    "type": "npm"
   },
   "devDependencies": {
+    "ava": "0.19.1",
     "coveralls": "2.13.1",
-    "nsp": "2.6.2",
-    "standard": "8.6.0",
-    "tap": "10.2.0"
+    "nsp": "2.6.3",
+    "nyc": "10.3.2",
+    "standard": "10.0.2"
   },
   "dependencies": {
-    "isomorphic-fetch": "2.2.1",
+    "axios": "0.16.1",
     "muicss": "0.9.16",
-    "next": "1.2.3"
+    "next": "3.0.0-beta6",
+    "react": "15.5.4",
+    "react-dom": "15.5.4"
   }
 }

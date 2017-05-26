@@ -55,6 +55,6 @@
   "dependencies": {
     "isomorphic-fetch": "2.2.1",
     "muicss": "0.9.16",
-    "next": "2.4.0"
+    "next": "1.2.3"
   }
 }

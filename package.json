@@ -1,7 +1,7 @@
 {
   "name": "next-dashboard-rambo",
   "description": "Dashboard for statuses",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "license": "MIT",
   "private": true,
   "author": {
@@ -49,7 +49,7 @@
   "devDependencies": {
     "coveralls": "2.13.1",
     "nsp": "2.6.2",
-    "standard": "10.0.2",
+    "standard": "8.6.0",
     "tap": "10.2.0"
   },
   "dependencies": {

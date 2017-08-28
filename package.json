@@ -57,8 +57,9 @@
   },
   "dependencies": {
     "axios": "0.16.2",
+    "next": "3.0.4",
     "muicss": "0.9.23",
-    "next": "3.0.1",
+  
     "react": "15.5.4",
     "react-dom": "15.5.4"
   }

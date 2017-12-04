@@ -49,7 +49,7 @@
     "type": "npm"
   },
   "devDependencies": {
-    "ava": "0.23.0",
+    "ava": "0.24.0",
     "coveralls": "3.0.0",
     "nsp": "3.1.0",
     "nyc": "11.3.0",
@@ -59,7 +59,7 @@
     "axios": "0.17.1",
     "next": "4.1.4",
     "muicss": "0.9.30",
-    "react": "16.1.1",
+    "react": "16.2.0",
     "react-dom": "16.2.0"
   }
 }

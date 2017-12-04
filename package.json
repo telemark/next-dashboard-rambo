@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=7.10.0"
+    "node": ">=8.9.1"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -32,16 +32,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/next-dashboard-rambo.git"
+    "url": "git+https://github.com/telemark/next-dashboard-rambo.git"
   },
   "bugs": {
     "url": "https://github.com/telemark/next-dashboard-rambo/issues"
   },
-  "homepage": "https://github.com/telemark/next-dashboard-rambo",
+  "homepage": "https://github.com/telemark/next-dashboard-rambo#readme",
   "now": {
     "name": "dashboard-rambo",
     "alias": [
-      "rambo.dashboard.tjeneste.win"
+      "rambo.dashboard.next.t-fk.no"
     ],
     "env": {
       "NODE_ENV": "production"

@@ -15,7 +15,7 @@ export default ({ children }) => (
           margin: 0;
           background: white;
           color: black;
-          font-family: "Georgia", "Times", "Times New Roman", serif;
+          font-family: "Open Sans", sans-serif;
         }
 
         h1, h2, h3, h4, h5, h6 {

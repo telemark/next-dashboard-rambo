@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.9.1"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -19,9 +19,11 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
-    "now-deploy": "npm test && npm run build && now out --static -n dashboard-rambo && now alias"
+    "deploy": "npm test && npm run export && now out --static -n dashboard-rambo && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "dashboard",
@@ -57,7 +59,7 @@
   },
   "dependencies": {
     "axios": "0.18.0",
-    "next": "4.2.3",
+    "next": "5.0.0",
     "react": "16.2.0",
     "react-dom": "16.2.0"
   }

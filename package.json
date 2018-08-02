@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.9.4"
+    "node": ">=10.8.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",

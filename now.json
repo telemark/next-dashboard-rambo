@@ -1,0 +1,10 @@
+{
+  "name": "dashboard-rambo",
+  "alias": [
+    "rambo.dashboard.next.t-fk.no"
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "type": "static"
+}

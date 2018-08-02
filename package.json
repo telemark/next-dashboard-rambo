@@ -22,7 +22,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "deploy": "npm test && npm run build && npm run export && now out --static -n dashboard-rambo && now alias",
+    "deploy": "npm test && npm run build && npm run export && now --static out --name dashboard-rambo && now alias",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
     "cleanup": "rm -rf .next && rm -rf out"
   },

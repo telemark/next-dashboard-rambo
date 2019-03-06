@@ -1,10 +1,13 @@
 {
+  "version": 2,
   "name": "dashboard-rambo",
   "alias": [
     "rambo.dashboard.next.t-fk.no"
   ],
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "out" }}
+  ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "type": "static"
+  }
 }

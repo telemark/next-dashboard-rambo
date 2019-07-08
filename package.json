@@ -43,7 +43,7 @@
   },
   "homepage": "https://github.com/telemark/next-dashboard-rambo#readme",
   "devDependencies": {
-    "ava": "1.4.1",
+    "ava": "2.2.0",
     "coveralls": "3.0.3",
     "nyc": "14.1.1",
     "standard": "12.0.1"
